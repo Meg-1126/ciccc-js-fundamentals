@@ -33,3 +33,42 @@ What goes into the three blank spaces? You can fill in the blanks with the name 
 
 Mr. Parkes did it in the dining room with the knife!
 */
+//NOTE
+//Create variable
+//Check which room is it
+//Print message
+
+const room = "dining room";
+let weapon = "";
+const suspect = "Mr. Parkes";
+let solved = false;
+
+if (room === 'dining room') {
+  weapon = 'knife';
+  if (suspect === 'Mr. Parkes') {
+    solved = true;
+  }
+} else if (room === 'ballroom') {
+  weapon = 'poison'
+  if (suspect === 'Mr. Kalehoff'){
+    solved = true;
+  }
+} else if (room === 'gallery') {
+  weapon = 'trophy';
+  if (suspect === 'Ms. Van Cleve'){
+    solved = true;
+  }
+} else if (room === 'billiards room') {
+  weapon = 'pool stick';
+  if (suspect === 'Mrs. Sparr'){
+    solved = true;
+  }
+}
+
+if (solved) {
+  console.log(suspect + ' did it in the' + room +  'with the ' + weapon + '!');
+} else {
+  console.log('unsolved');
+}
+
+

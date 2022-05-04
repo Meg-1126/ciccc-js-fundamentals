@@ -15,3 +15,23 @@ Use the eatsPlants and eatsAnimals variables to test your code.
 
 If eatsPlants equals true and eatsAnimals equals false, then herbivore should be printed to the console. 
 */
+const isGoing = true;
+let color = isGoing ? "green" : "red";
+console.log(color);
+
+const eatsPlants = true;
+const eatsAnimals = true;
+const eatsBoth = true;
+const notEat = undefined;
+
+if(eatsPlants) {
+  console.log("herbivore");
+} else if (eatAnimals)
+{
+  console.log("carnivore");
+} else if (eatBoth)
+{
+  console.log("omnivore");
+} else {
+  console.log(notEat);
+}
