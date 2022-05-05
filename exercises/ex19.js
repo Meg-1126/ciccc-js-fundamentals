@@ -4,3 +4,13 @@ Call the emotions() function so that it prints the output you see below, but ins
 emotions("happy", laugh(2)); // you can use your laugh function from the previous quizzes
 Prints: "I am happy, haha!"
 */
+
+
+var emotions = function displayMessage(emotion, emotionFunction) {
+   console.log("I am " + emotion + emotionFunction);
+} 
+
+
+
+
+

@@ -35,3 +35,16 @@ function makeLine(length) {
     }
     return line + "\n";
 }
+console.log(makeLine(1)); //this gives me set of * and space
+
+function buildTriangle(widestWidth) {
+  let traiangle="";
+  for (var i = 1; i <= widestWidth; i++){
+    traiangle += makeLine(i);
+  }
+
+}
+//first just priny
+
+console.log(buildTriangle(10));
+// //
